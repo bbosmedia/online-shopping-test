@@ -1,0 +1,96 @@
+.single-product-info{
+    .product-price, .monthly-payment{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #F7F7F7;
+        margin-bottom: 20px;
+
+        .price-category{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+
+            .price-monthly{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: -0.3px;
+                color: #BBC2D0;
+
+                .price{
+                    background: #FF647C;
+                    color: #fff;
+                    padding: 2px 6px;
+                    border-radius: 2px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+
+        // Price Category
+        .price-category-buttons{
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            button{
+                flex: 1;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #00C48C;
+                outline: none;
+                background: #fff;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17px;
+                letter-spacing: -0.3px;
+                color: #00C48C;
+                transition: 0.4s ease-in-out;
+
+                &:first-child{
+                    border-radius: 6px 0px 0px 6px;
+                }
+                &:last-child{
+                    border-radius: 0px 6px 6px 0px;
+                }
+
+
+                &:hover, &.active{
+                    background: #00C48C;
+                    color: #fff;
+                }
+            }
+        }
+
+        .adding-price{
+            font-size: 16px;
+            line-height: 19px;
+            color: #262728;
+            text-align: center;
+        }
+    }
+
+    .view-more-product-characteries{
+        cursor: pointer;
+        margin-top: 21px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        width: 100%;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: #00C48C;
+    }
+}

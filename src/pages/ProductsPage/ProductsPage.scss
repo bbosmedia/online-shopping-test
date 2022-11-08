@@ -1,0 +1,15 @@
+.all-products-count{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #262728;
+    margin-bottom: 20px;
+}
+
+.products-page-inner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+}

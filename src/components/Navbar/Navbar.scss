@@ -1,0 +1,73 @@
+.navbar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #fff;
+
+    .brand{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    .left-menu{
+        display: flex;
+        align-items: center;
+        margin-right: -64px;
+        list-style: none;
+        gap: 36px;
+
+        .notification-btn{
+            display: flex;
+            .green-cricle{
+                background: #00C48C;
+                height: 16px;
+                width: 16px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                margin-left: -10px;
+                margin-top: -5px;
+            }
+        }
+
+        .auth-btn{
+            height: 70px;
+            background: #3D639D;
+            padding: 19px 60px;
+            color: #fff;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-radius: 0px 0px 0px 30px;
+            font-size: 16px;
+            line-height: 19px;
+
+            .circle{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                width: 32px;
+                background-color: #fff;
+                border-radius: 30px;
+            }
+        }
+    }
+}
