@@ -11,6 +11,11 @@
     border-radius: 0px 30px 0px 0px;
     width: 263px;
 
+    @media screen and (max-width: 1200px) {
+        width: 60px;
+        padding-left: 0px;
+    }
+
     .sidebar-link{
         width: 233px;
         height: 50px;
@@ -31,6 +36,29 @@
         &:hover{
             background: rgba(255, 255, 255, 0.15);
         }
+
+        span{
+            @media screen and (max-width:1200px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:1200px) {
+            width: 60px;
+            height: 60px;
+            padding-left: initial;
+            justify-content: center;
+            border-radius:  0 0 0 0;
+        }
+
+        @media screen and (max-width:960px) {
+            border-radius: 60px;
+        }
+        @media screen and (max-width:425px) {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+        }
     }
     .sidebar-link.active{
         background: #fff;
@@ -39,5 +67,38 @@
         path{
             fill: #3D639D;
         }
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 60px;
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width:960px) {
+        width: calc(100% - 40px);
+        padding-top: 5px;
+        bottom: 20px;
+        border-radius: 20px 20px 20px 20px;
+        left: 20px;
+        z-index: 99;
+        height: 70px;
+        top: auto;
+
+        .sidebar-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 0px;
+            align-items: center;
+            border-radius: 60px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 100%;
+        left: 0;
+        border-radius: 0px 0px 0px 0px;
+        height: 50px;
+        bottom: 0;
     }
 }

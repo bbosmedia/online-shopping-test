@@ -30,6 +30,13 @@
                     line-height: 19px;
                 }
             }
+
+            @media screen and (max-width: 425px) {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
         }
 
         // Price Category

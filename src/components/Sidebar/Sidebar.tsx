@@ -23,8 +23,10 @@ const Sidebar = () => {
 								</clipPath>
 							</defs>
 						</svg>
-						Главная
+						<span>Главная</span>
 					</Link>
+				</li>
+				<li>
 					<Link className="sidebar-link" to="/order">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -34,8 +36,10 @@ const Sidebar = () => {
 								fill="white"
 							/>
 						</svg>
-						Заказы
+						<span>Заказы</span>
 					</Link>
+				</li>
+				<li>
 					<Link className="sidebar-link" to="/products">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -45,8 +49,10 @@ const Sidebar = () => {
 								fill="white"
 							/>
 						</svg>
-						Товары
+						<span>Товары</span>
 					</Link>
+				</li>
+				<li>
 					<Link className="sidebar-link" to="/products">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clipPath="url(#clip0_7_291)">
@@ -63,8 +69,10 @@ const Sidebar = () => {
 								</clipPath>
 							</defs>
 						</svg>
-						Отзывы
+						<span>Отзывы</span>
 					</Link>
+				</li>
+				<li>
 					<Link className="sidebar-link active" to="/products">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clipPath="url(#clip0_7_298)">
@@ -81,7 +89,7 @@ const Sidebar = () => {
 								</clipPath>
 							</defs>
 						</svg>
-						Оформить заказ
+						<span>Оформить заказ</span>
 					</Link>
 				</li>
 			</ul>

@@ -33,5 +33,13 @@
         border-radius: 0px 26px 26px 0px;
         border: none;
         outline: none;
+
+        @media screen and (max-width: 425px) {
+            width: 60px;
+            height: 40px;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        height: 40px;
     }
 }

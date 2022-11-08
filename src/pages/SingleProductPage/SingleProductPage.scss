@@ -45,6 +45,10 @@
             letter-spacing: 0.01em;
             color: #262728;
         }
+
+        @media screen and (max-width: 768px){
+            grid-template-columns: 100%;
+        }
     }
 
     .single-product-images{

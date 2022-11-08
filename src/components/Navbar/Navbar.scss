@@ -68,6 +68,20 @@
                 background-color: #fff;
                 border-radius: 30px;
             }
+            @media screen and (max-width: 425px) {
+                padding: 19px 20px;
+                span{
+                    display: none;
+                }
+            }
         }
+
+        @media screen and (max-width: 425px) {
+            margin-right: -20px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        padding: 0 20px;
     }
 }
