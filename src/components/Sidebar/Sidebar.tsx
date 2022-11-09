@@ -1,13 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import BreadCrumb from '../BreadCrumb/BreadCrumb'
+import useBreadcrumbs from "use-react-router-breadcrumbs";
 import './Sidebar.scss'
+import { activeLink } from '../../helpers/activeLink';
 
 const Sidebar = () => {
+	const breadcrumbs = useBreadcrumbs();
+	console.log(breadcrumbs[1])
 	return (
 		<aside className="sidebar">
 			<ul className="sidebar-list">
 				<li className="sidebar-item">
-					<Link className="sidebar-link" to="/">
+					<Link className={breadcrumbs[1] ? "sidebar-link" : "sidebar-link active"} to="/">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clipPath="url(#clip0_7_267)">
 								<path
@@ -27,7 +32,7 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<Link className="sidebar-link" to="/order">
+					<Link className={activeLink(breadcrumbs, "/orders")} to="/orders">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								fillRule="evenodd"
@@ -40,7 +45,7 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<Link className="sidebar-link" to="/products">
+					<Link className={activeLink(breadcrumbs, "/products")} to="/products">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								fillRule="evenodd"
@@ -53,7 +58,7 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<Link className="sidebar-link" to="/products">
+					<Link className={activeLink(breadcrumbs, "/reviews")} to="/reviews">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clipPath="url(#clip0_7_291)">
 								<path
@@ -73,7 +78,7 @@ const Sidebar = () => {
 					</Link>
 				</li>
 				<li>
-					<Link className="sidebar-link active" to="/products">
+					<Link className={activeLink(breadcrumbs, "/checkout")} to="/checkout">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clipPath="url(#clip0_7_298)">
 								<path

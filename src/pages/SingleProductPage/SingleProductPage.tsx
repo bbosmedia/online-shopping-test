@@ -9,7 +9,7 @@ const SingleProductPage = () => {
 			<div className="single-product-page">
 				<BreadCrumb>
 					<BreadCrumbLink title="Заявки" address="/" />
-					<BreadCrumbLink title="Оформить заказ" address="/products" />
+					<BreadCrumbLink title="Оформить заказ" address="/checkout" />
 					<BreadCrumbLink title="Смартфон Apple iPhone 11 128 Gb Slim Box черный" />
 				</BreadCrumb>
 				<div className="single-product-page-inner">

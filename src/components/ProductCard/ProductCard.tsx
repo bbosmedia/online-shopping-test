@@ -13,7 +13,7 @@ const ProductCard = ({ product }: { product: IProduct }) => {
 				<img className="product-image" src={product.img} alt={product.name} />
 			</div>
 			<div className="product-card-body">
-				<Link className="product-card-name" to={`/products/${product.id}`}>
+				<Link className="product-card-name" to={`/checkout/${product.id}`}>
 					{product.name}
 				</Link>
 				<span className="product-card-price">{numberWithSpaces(product.price)} сум</span>

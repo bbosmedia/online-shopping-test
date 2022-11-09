@@ -11,8 +11,8 @@ function App() {
 			<Navbar />
 			<Sidebar />
 			<Routes>
-				<Route path="/products" element={<ProductsPage />} />
-				<Route path="/products/:id" element={<SingleProductPage />} />
+				<Route path="/checkout" element={<ProductsPage />} />
+				<Route path="/checkout/:id" element={<SingleProductPage />} />
 			</Routes>
 		</>
 	)
