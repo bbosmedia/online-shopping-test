@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BreadCrumb from '../BreadCrumb/BreadCrumb'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import './Sidebar.scss'
 import { activeLink } from '../../helpers/activeLink';
