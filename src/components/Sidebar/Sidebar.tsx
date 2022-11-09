@@ -7,7 +7,6 @@ import { activeLink } from '../../helpers/activeLink';
 
 const Sidebar = () => {
 	const breadcrumbs = useBreadcrumbs();
-	console.log(breadcrumbs[1])
 	return (
 		<aside className="sidebar">
 			<ul className="sidebar-list">
